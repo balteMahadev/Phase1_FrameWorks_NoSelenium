@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/mahadev.b/IdeaProjects/Phase1_FrameWorks_NoSelenium">
+
+        <groups>
+            <run>
+                <exclude name="smoke"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testng.tutorials.FirstAndSecondMethods"/>
+            <class name="com.testng.tutorials.ThirdClass"/>
+            <class name="com.testng.tutorials.LonesOnCars"/>
+            <class name="com.testng.tutorials.LoneOnHouse"/>
+        </classes>
+    </test>
+</suite>

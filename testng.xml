@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.testng.tutorials.TestNgListeners"></listener>
+    </listeners>
+    <parameter name="URL" value="qaclickacadamy.com/"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/mahadev.b/IdeaProjects/Phase1_FrameWorks_NoSelenium">
+        <classes>
+            <class name="com.testng.tutorials.FirstAndSecondMethods"></class>
+            <class name="com.testng.tutorials.ThirdClass"></class>
+        </classes>
+    </test>
+    <test name="Car Lone">
+        <parameter name="URL" value="CarLone.com/"></parameter>
+        <classes>
+            <class name="com.testng.tutorials.LonesOnCars">
+                <methods>
+                    <include name="APILoginCarLoan"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Home Lone">
+        <parameter name="URL" value="HomeLone.com/"></parameter>
+        <classes>
+            <class name="com.testng.tutorials.LoneOnHouse">
+                <methods>
+
+                    <exclude name="MobileLoginHomeLoan"></exclude>
+                    <exclude name="API.*"></exclude>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="C:/Users/mahadev.b/IdeaProjects/Phase1_FrameWorks_NoSelenium">
+        <parameter name="URL" value="qaclickacadamy.com/" ></parameter>
+        <parameter name="API/Keys" value="123456" ></parameter>
+        <classes>
+            <class name="com.testng.tutorials.DataProviderClass"></class>
+        </classes>
+    </test>
+</suite>
